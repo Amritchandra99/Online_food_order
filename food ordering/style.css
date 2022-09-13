@@ -1,0 +1,254 @@
+/* css reset */
+*{
+    margin:0;
+    padding:0;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+/* css variable */
+:root{
+    --navbar-height:50px;
+
+}
+/* navbar */
+#navbar{
+    display:flex;
+    align-items: center;
+}
+#navbar{
+   position:sticky;
+   top:0px;
+}
+#navbar::before{
+    content:"";
+    background: black;
+    position:absolute;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity:0.8;
+}
+/* navbar logo and image */
+#logo img{
+    height:100px;
+    margin:10px 20px;
+    border-radius: 360px;
+
+}
+/* navbar list styling */
+#navbar ul{
+    display:flex;
+}
+#navbar ul li{
+      list-style:none; /*dot remove ho jata ha*/
+      font-size: 20px;
+      font-family: 'Roboto', sans-serif;
+      
+}
+#navbar ul li a{
+    display:block;/*by default display inline hota ha so padding dena ha to block karna hoga*/
+    text-decoration: none;
+    color:white;
+    padding:10px;
+
+
+}
+#navbar ul li a:hover{
+    
+    color:black;
+    background: white;
+    border-radius: 20px;
+
+
+}
+
+/* Home section */
+#home{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:300px;
+    
+
+}
+
+#home::before{
+
+    content:"";
+    background:url('img2/cover_page.jpg') no-repeat center center/cover;
+    position:absolute;
+    height:410px;
+    top:0%;
+    left:0%;
+    width:100%;
+    z-index:-1;
+    opacity:0.9;
+}
+#home h1{
+    color:rgb(238, 80, 12);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+#home p{
+    color:white;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Roboto', sans-serif;
+}
+/* services section */
+#services-container{
+    background: rgb(240, 231, 168);
+    
+}
+#services{
+    margin:34px;
+    display:flex;
+    
+    
+}
+
+#services .box{
+    border:2px solid brown;
+    padding:10px;
+    margin:10px 44px;
+    border-radius: 25px;
+    background: rgb(238, 187, 187);
+    
+}
+#services .box img{
+   height:168px;
+   margin:auto;
+   display:block;
+}
+#services .box p{
+    
+    font-size:15px;
+    color:blue;
+
+}
+/* client section */
+#client-section{
+    
+    position:relative;
+}
+#client-section::before{
+    content:"";
+    position:absolute;
+background: url('img2/cover_2nd.jpg') no-repeat center center/cover;
+width:100%;
+height:100%;
+z-index:-1;
+opacity:0.4;
+
+}
+#clients{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.clients-items{
+    
+    padding:20px;
+    margin: 20px;
+
+
+}
+
+
+#clients img {
+    height:70px;
+    width:200px;
+    
+    
+}
+
+/* contact-section */
+#contact{
+    position:relative;
+    height:580px;
+    
+}
+#contact::before{
+    content:"";
+    position:absolute;
+background: url('img2/contact-us-4193401__340.webp') no-repeat center center/cover;
+width:100%;
+height:100%;
+z-index:-1;
+opacity:0.4;
+
+}
+#contact-box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+}
+#contact-box input,
+#contact-box textarea{
+    width:100%;
+    padding:0.5rem;
+    background: rgb(192, 231, 241);
+}
+#contact-box form{
+    width:40%;
+}
+#contact-box label{
+    font-size: 20px;
+}
+#btn{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    
+}
+#btn button{
+    background: rgb(133, 239, 158);
+    border-radius: 20px;
+    font-size: 20px;
+    margin:20px;
+    
+}
+/* footer section */
+footer{
+    background: #000;
+    color:white;
+    height:40px;
+    padding:9px;
+}
+
+/* utility classes */
+.h-primary{
+ font-size: 2.4rem;
+ margin:10px;
+ padding: 10px;font-family: 'Roboto', sans-serif;
+ font-size: 40px;
+ color:brown;
+ 
+}
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+   }
+.btn{
+    padding:8px 15px;
+    border:2px solid green;
+    background-color: orange;
+    border-radius: 360px;
+    margin:10px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+.btn:hover{
+    background-color: blue;
+}
